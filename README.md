@@ -28,15 +28,19 @@
     ![alt text](image-1.png)
     - json
     ![alt text](image-2.png)
-
-4. Run backend
+4. Import keyFrame folder into image-search-ui/public
+![image](https://github.com/user-attachments/assets/0bcb07e1-cad0-4825-849d-ef76fdf7a8d7)
+5. Run backend
    ```bash
+
    python app.py
    ```
 
-5. Run frontend
+6. Run frontend
    ```bash
    cd image-search-ui
    npm install
    npm start
    ```
+Demo:
+https://github.com/user-attachments/assets/7a13c8f5-4e91-424a-be80-e4487e8c448d
