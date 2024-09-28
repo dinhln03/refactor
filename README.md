@@ -31,6 +31,7 @@
 
 4. Run backend
    ```bash
+
    python app.py
    ```
 
@@ -40,3 +41,5 @@
    npm install
    npm start
    ```
+Demo:
+https://github.com/user-attachments/assets/7a13c8f5-4e91-424a-be80-e4487e8c448d
