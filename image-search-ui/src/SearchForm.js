@@ -1,4 +1,3 @@
-// src/SearchForm.js
 import React, { useState } from 'react';
 import './SearchForm.css';
 
@@ -12,6 +11,13 @@ const SearchForm = ({ onSearch }) => {
     onSearch({ text: textQuery, k, model_type: modelType });
   };
 
+  const handleKeyDown = (e) => {
+    if (e.key === 'Enter' && !e.shiftKey) {
+      e.preventDefault();
+      handleSubmit(e);
+    }
+  };
+
   return (
     <form onSubmit={handleSubmit} className="search-form">
       <div className="form-group">
@@ -20,6 +26,7 @@ const SearchForm = ({ onSearch }) => {
           id="textQuery"
           value={textQuery}
           onChange={(e) => setTextQuery(e.target.value)}
+          onKeyDown={handleKeyDown}
           required
           rows="6"
           placeholder="Enter your text query here (up to 200 words)"
@@ -55,4 +62,3 @@ const SearchForm = ({ onSearch }) => {
 };
 
 export default SearchForm;
-
